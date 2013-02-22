@@ -1,0 +1,29 @@
+Object B
+------
+
+b.stl is rotated (in meshlab) with respect to b.blend in the following order:
+ - about Z axis = +180 degrees
+ - about X axis = +50 degrees
+
+
+Unit Models
+------
+
+b_unit.stl and a_unit.stl are scaled & centered versions of a.stl and b.stl
+
+- Bounding box is centered at origin (Normals, Curvature ... -> Transform: Move, Translate, Center)
+- Bounding box is unit scaled (Normals, Curvature ... -> Transform: Scale)
+
+render.blend
+------
+imported a_unit and b_unit
+
+(for each)
+edit mode -> mesh tools -> shading = smooth
+ -> normals = recalculate
+ -> deform = smooth vertex (1x x,y,z)
+
+material
+diffuse = 1
+specular = 0
+shading : ambient = 1, transluce = 0
